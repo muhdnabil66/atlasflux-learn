@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@import "swiper/css";
+
+/* CSS Variables untuk penampilan */
+:root {
+  --accent-base: #3b82f6; /* biru */
+  --accent-soft: #eff6ff;
+  --density: 1;
+  font-size: 16px;
+}
+
+.dark {
+  --accent-soft: #1e3a8a20;
+}
+
+/* Jika reduce motion */
+.reduce-motion * {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+}
+
+/* Kelas utiliti berdasarkan density (boleh digunakan dalam komponen) */
+.density-compact {
+  --spacing: 0.75rem;
+}
+.density-comfortable {
+  --spacing: 1rem;
+}
+
+/* Dropdown content (untuk navbar) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 50;
+}
+
+.group:hover .dropdown-content {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-scroll-left {
+  animation: scroll-left 20s linear infinite;
+  width: fit-content;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
