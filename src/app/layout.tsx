@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "AtlasFlux Learn - Free Coding Platform",
   description:
     "Learn to code for free with tutorials, live editor, and AI assistance.",
-  icons: { icon: "/atlas-logo.png", apple: "/apple-touch-icon.png" },
+  icons: { icon: "/favicon.png", apple: "/apple-touch-icon.png" },
   manifest: "/manifest",
   appleWebApp: {
     capable: true,
@@ -34,12 +34,8 @@ export default function RootLayout({
           <html lang="en">
             <head>
               {/* Pautan ikon manual untuk memastikan ikon dipaparkan */}
-              <link rel="icon" href="/atlas-logo.png" type="image/png" />
-              <link
-                rel="shortcut icon"
-                href="/atlas-logo.png"
-                type="image/png"
-              />
+              <link rel="icon" href="/favicon.png" type="image/png" />
+              <link rel="shortcut icon" href="/favicon.png" type="image/png" />
               {/* Cookie Script – dimuat sebelum interaktif */}
               <Script
                 id="cookiescript"
