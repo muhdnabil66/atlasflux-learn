@@ -168,3 +168,12 @@
 //     </div>
 //   );
 // }
+// src/app/dashboard/sdk/page.tsx
+export default function SDKPage() {
+  return (
+    <div>
+      <h1>SDK Documentation</h1>
+      <p>This page is under construction.</p>
+    </div>
+  );
+}
