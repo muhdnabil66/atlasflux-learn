@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description:
     "Learn to code for free with tutorials, live editor, and AI assistance.",
   icons: { icon: "/atlasicon.png", apple: "/apple-touch-icon.png" },
-  manifest: "/manifest", // <-- tambah ini
+  manifest: "/manifest",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
@@ -33,6 +33,14 @@ export default function RootLayout({
         <AppearanceProvider>
           <html lang="en">
             <head>
+              {/* Pautan ikon manual untuk memastikan ikon dipaparkan */}
+              <link rel="icon" href="/atlasicon.png" type="image/png" />
+              <link
+                rel="shortcut icon"
+                href="/atlasicon.png"
+                type="image/png"
+              />
+              {/* Cookie Script – dimuat sebelum interaktif */}
               <Script
                 id="cookiescript"
                 src="//cdn.cookie-script.com/s/813143df5e0a23a24ce81fb18ffb4dc5.js"
